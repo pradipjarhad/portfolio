@@ -125,39 +125,15 @@ or reproduced from the open source public code.
   <section class="coffeewithme" id="contact">
   <div class="row alignCenter">
     <h1>Contact Me</h1>
-    <form id="theForm" class="simform" data-netlify="true">
-      <div class="simform-inner">
-        <ol class="questions">
-          <li>
-          <span><label for="q1">Write a message for me below</label></span>
-          <input type="text" name="umsg" id="q1"/>
-          </li>
-          <li>
-          <span><label for="q2">Your name</label></span>
-          <input type="text" name="uname" id="q2"/>
-          </li>
-          <li>
-          <span><label for="q3">Your email or phone number</label></span>
-          <input type="text" name="email" id="q3"/>
-          </li>
-        </ol>
-        <!-- /questions -->
-        <button class="submit" type="submit">Send answers</button>
-        <div class="controls">
-          <button class="next"><i class="fa fa-arrow-right"></i></button>
-          <div class="progress">
-          </div>
-          <span class="number">
-          <span class="number-current"></span>
-          <span class="number-total"></span>
-          </span>
-          <span class="error-message"></span>
-        </div>
-        <!-- / controls -->
-      </div>
-      <!-- /simform-inner -->
-      <span class="final-message"></span>
-    </form>
+    
+     <form name="msg" method="POST" data-netlify="true">      
+  <input name="name" type="text" class="feedback-input" placeholder="Name" />   
+  <input name="email" type="text" class="feedback-input" placeholder="Email" />
+  <textarea name="text" class="feedback-input" placeholder="Write a message for me"></textarea>
+  <input type="submit" value="SUBMIT"/>
+</form>
+     
+     
     <!-- /simform -->
   </div>
   </section>
