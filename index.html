@@ -127,7 +127,7 @@ or reproduced from the open source public code.
     
      <form name="msg" method="POST" data-netlify="true">      
   <input name="name" type="text" class="feedback-input" placeholder="Name" required="required" data-validation-required-message="Please enter your name." />   
-  <input name="email" type="text" class="feedback-input" placeholder="Email" required="required" data-validation-required-message="Please enter your email." />
+  <input name="email" type="text" pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" class="feedback-input" placeholder="Email" required="required" data-validation-required-message="Please enter your email." />
   <textarea name="text" class="feedback-input" placeholder="Write a message for me" required="required" data-validation-required-message="Please enter your message." ></textarea>
   <input type="submit" value="SUBMIT"/>
 </form>
@@ -158,10 +158,11 @@ or reproduced from the open source public code.
       <p class="alignCenter">
         Subscribe To My Mailing List
       </p>
+	    <p>
        <form name="subscribe" method="POST" data-netlify="true">     
   <input name="email" type="text" class="feedback-input" pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" placeholder="Your email" data-validation-required-message="Please enter your email." required/>
   <input type="submit" value="SUBSCRIBE"/>
-</form>
+	    </form> </p>
     </div>
     
 	  <div class="large-4 columns pad10">
